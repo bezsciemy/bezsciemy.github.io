@@ -1,10 +1,12 @@
 
+html { overflow-y: hidden; }
+
 .header 
 {
 	width: 100%;
 	height: 125px;
-	background: #404040;
-	filter: drop-shadow(4px 4px 10px #262626);
+	background: #333333;
+	filter: drop-shadow(0px 0px 7px #262626);
 	margin: 0;
 	white-space: nowrap;
 	display: flex;
@@ -14,14 +16,13 @@
 	display: inline-block;
 	margin: 0;
 	font-family: "Copperplate", Fantasy;
-	filter: drop-shadow(6px 8px 55px #ffffff);
+	filter: drop-shadow(6px 8px 50px #ffffff);
 	letter-spacing: 1px;
 	line-height: 150%;
 	font-size: 64px;
 	float: center;
 	
 }
-
 body
 {
 	margin: 0;
@@ -32,9 +33,9 @@ body
 section
 {
 	padding: 0 100px;
-	background: url(article.jpg);
+	background: url(aboutus.jpg);
 	background-image: blur(1px);
-	height: 180vh;
+	height: 85vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,14 +47,12 @@ section
 {
 	position: center;
 	width: 500px;
-	height: 1100px;
+	height: 565px;
 	padding: 50px;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.8);
 	box-shadow: 0 5px 15px rgba(0,0,0,.5);
 	display: block;
-	margin-top: -15%;
 }
-
 
 .box h1
 {
@@ -162,15 +161,9 @@ section
 	height: 50%;
 	background: (255,255,255,0.1);
 }
-
-.box .b h1
-{
-	font-family: "Bodoni MT";
-	font-size: 30px;
-}
-.box .b p
+.box p
 {
 	font-family: Calibri;
-	text-align: center; 
+	text-align: center;
+	filter: drop-shadow(4px 4px 15px #ffffff);	
 }
-
