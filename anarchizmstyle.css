@@ -1,0 +1,175 @@
+
+.header 
+{
+	width: 100%;
+	height: 125px;
+	background: #404040;
+	filter: drop-shadow(4px 4px 10px #262626);
+	margin: 0;
+	white-space: nowrap;
+	display: flex;
+}
+.header h5
+{	
+	display: inline-block;
+	margin: 0;
+	font-family: "Copperplate", Fantasy;
+	filter: drop-shadow(6px 8px 55px #ffffff);
+	letter-spacing: 1px;
+	line-height: 150%;
+	font-size: 64px;
+	float: center;
+	
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #000000;
+}
+section
+{
+	padding: 0 100px;
+	background: url(article.jpg);
+	background-image: blur(1px);
+	height: 180vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box
+{
+	position: center;
+	width: 500px;
+	height: 1100px;
+	padding: 50px;
+	background: rgba(255,255,255,.9);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	display: block;
+	margin-top: -15%;
+}
+
+
+.box h1
+{
+	text-align: center;
+	filter: drop-shadow(4px 4px 8px #262626);
+	background: rgba(51,51,51, 0.2);
+	border-radius: 30px;
+}
+
+.header a
+{	
+	display: inline-block;
+	margin-right: 50%;
+	margin-left: 10px;
+	margin-top: 0;
+	margin-bottom: 6px;
+	letter-spacing: 4px;
+	width: 160px;
+	height: 50px;
+	justify-content: center;
+	filter: opacity(100%);
+	line-height: 48px;
+	background: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+	filter: drop-shadow(4px 4px 12px #ffffff);
+}
+
+.header a::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #ff9900, #ffff00, #ff0000, #ff0066, #ff9900, #ffff00, #ff0000, #ff0066, #ff9900, #ffff00);
+	background-size: 400%;
+	opacity: 45%;
+	transition: 0.5%;
+	animation: animate 20s linear infinite;
+}
+.header a::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #ff9900, #ffff00, #ff0000, #ff0066, #ff9900, #ffff00, #ff0000, #ff0066, #ff9900, #ffff00);
+	background-size: 400%;
+	opacity: 45%;
+	filter: blur(20px);
+	transition: 0.5%;
+	animation: animate 20s linear infinite;
+}
+.header a:hover::before,
+.header a:hover::after
+{
+	opacity: 1;
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0 0;
+	}
+	50%
+	{
+		background-position: 300% 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+	}
+}
+
+.header a span
+{
+	position: absolute;
+	display: block;
+	top: 1px;
+	left: 1px;
+	right: 1px;
+	bottom: 1px;
+	text-align: center;
+	background: #0c0c0c;
+	color: rgba(255,255,255,0.5);
+	transition: 1s;
+	z-index: 1;
+}
+.header a:hover span
+{
+	color: rgba(255,255,255,1);
+}
+
+.header a span::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: (255,255,255,0.1);
+}
+
+.box .b h1
+{
+	font-family: "Bodoni MT";
+	font-size: 30px;
+}
+.box .b p
+{
+	font-family: Calibri;
+	text-align: center 
+}
